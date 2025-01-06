@@ -91,3 +91,15 @@ h1 {
 .submitButton {
   display: block;
 }
+
+@media screen and (max-width: 992px) {
+  .inputbox input {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .resultbox p {
+    font-size: 1.5rem;
+  }
+}
