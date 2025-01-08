@@ -33,6 +33,12 @@
   margin-bottom: -0.2px;
   border: 1px solid #ccc;
 }
+
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 .inputContainer button {
   padding: 0.5rem;
   border-radius: 10px;
@@ -66,6 +72,8 @@
   color: #888;
   text-decoration: line-through;
 }
+
+/* Delete Button */
 ul li span {
   position: relative;
   top: -3px;
@@ -86,4 +94,71 @@ ul li span:hover {
   font-weight: 500;
   color: red;
   background-color: #acabab;
+}
+
+/* Responsive Design */
+
+/* Tablets  */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .inputBox {
+    width: 100%;
+  }
+
+  .inputContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inputContainer button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .taskContainer li {
+    padding: 0.75rem;
+  }
+
+  ul li span {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+/* Mobile Devices */
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 0.75rem;
+  }
+
+  .inputBox {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .inputContainer button {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .taskContainer li {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  ul li span {
+    font-size: 1.2rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
