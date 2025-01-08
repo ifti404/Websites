@@ -3,35 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guessing Game</title>
-    <link rel="stylesheet" href="guesser.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="to-do.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Guessing Game</h1>
-<form>
-    <div class="container">
-      <div class="inputbox">
-        <label for="numInput">Guess a number (1-5)</label>
-        <input type="number" class="numInput" min="1" max="5" required />
-      </div>
+    <!-- normal black background -->
+    <div class="background">
+      <!-- main to do part -->
+      <div class="container">
+        <h2>To Do List</h2>
+        <!-- input section -->
+        <div class="inputContainer">
+          <input type="text" class="inputBox" placeholder="Enter your text" />
+          <button class="addButton" onclick="addTask()">Add</button>
+        </div>
 
-      <div class="buttonbox">
-        <button class="submitButton" type="submit">Submit</button>
-      </div>
-    </form>
-
-      <button class="restartButton" onclick="restart()">Play Again</button>
-
-      <div class="resultbox">
-        <p class="roundText"></p>
-        <p class="resultText">...</p>
-        <p class="scoreText"></p>
+        <!-- listing section -->
+        <ul class="taskContainer">
+          <!-- its added via javascript so its blank -->
+        </ul>
       </div>
     </div>
-
-    <script src="guesser.js"></script>
+    <script src="to-do.js"></script>
   </body>
 </html>
