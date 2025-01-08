@@ -7,7 +7,7 @@ const weatherImg = document.querySelector(".weatherImg");
 async function checkWeather(city) {
   try {
     const response1 = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=6fea2995a26a689bdb5ca8a77bcf5475`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=6fea2995a26a689bdb5ca8a77bcf5475`
     );
 
     let data1 = await response1.json();
